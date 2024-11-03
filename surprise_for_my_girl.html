@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surprise for My Love</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            color: #444;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff5e78;
+        }
+        .flower, .heart {
+            font-size: 50px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            display: inline-block;
+            margin: 20px;
+        }
+        .flower:hover, .heart:hover {
+            transform: scale(1.3);
+        }
+        .message {
+            display: none;
+            font-size: 22px;
+            margin-top: 20px;
+            color: #e63946;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            document.querySelector('.message').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>💖 Surprise for My Love 💖</h1>
+    
+    <!-- Bunga dan hati interaktif -->
+    <div class="flower" onclick="showMessage()">🌸</div>
+    <div class="heart" onclick="showMessage()">❤️</div>
+    <div class="flower" onclick="showMessage()">🌼</div>
+    
+    <!-- Pesan cinta yang muncul setelah diklik -->
+    <div class="message">
+        <p>Hai sayangnya aku,</p>
+        <p>gimana proses hari ini sayang?</p>
+        <p>lumayan capek ya?</p>
+        <p>it's oke tetap semangat ya sayang,</p>
+        <p>jika ada masalah ceritanya sama aku ya</p>
+        <p>aku siap jadi pendengar yang baik</p>
+        <p><strong>tetap semangat ya sayang ❤️</strong></p>
+    </div>
+</body>
+</html>
